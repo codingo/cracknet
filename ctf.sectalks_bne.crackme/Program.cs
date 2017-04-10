@@ -43,13 +43,13 @@ namespace ctf.sectalks_bne.crackme
             Program.PrintBanner();
 
             var guesses = 5;
-            PrintGuesses(guesses);
 
             while (true)
             {
                 if (guesses < 1) PrintGameOver();
 
                 ShowTimer();
+                PrintGuesses(guesses);
 
                 Console.Write("Enter password: ");
                 var input = Console.ReadLine();
@@ -66,8 +66,7 @@ namespace ctf.sectalks_bne.crackme
                 }
 
                 guesses--;
-                PrintGuesses(guesses);
-
+                
                 Console.WriteLine($"Incorrect! Please wait to try again.");
 
                 Console.Beep(350, 250);
@@ -103,13 +102,16 @@ namespace ctf.sectalks_bne.crackme
 
         public static void ShowTimer()
         {
-            for (var i = 5; i >= 0; --i)
+            for (var i = 3; i >= 0; --i)
             {
                 var originalLeft = Console.CursorLeft;
                 var originalTop = Console.CursorTop;
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.CursorLeft = 0;
                 Console.CursorTop = 0;
-                Console.Write("Can make a guess in: {0}", i);
+
+                Console.Write("You can make another guess in: {0}", i);
+
                 Console.CursorLeft = originalLeft;
                 Console.CursorTop = originalTop;
                 Thread.Sleep(1000);
@@ -121,16 +123,20 @@ namespace ctf.sectalks_bne.crackme
             var originalLeft = Console.CursorLeft;
             var originalTop = Console.CursorTop;
 
-            Console.CursorLeft = 28;
+            Console.CursorLeft = 0;
             Console.CursorTop = 0;
+            Console.ForegroundColor = ConsoleColor.White;
 
-            if(remainingGuesses == 1)
+            if (remainingGuesses == 1)
             {
-                Console.Write($"One guess remains!");
+                var originalColour = Console.BackgroundColor;
+                Console.BackgroundColor = ConsoleColor.Red;
+                Console.Write($"You only have one guess remaining!");
+                Console.BackgroundColor = originalColour;
             }
             else
             {
-                Console.Write($"{remainingGuesses}/5 guesses remain!");
+                Console.Write($"You have {remainingGuesses}/5 guesses remaining!!");
             }
             
             Console.CursorLeft = originalLeft;
