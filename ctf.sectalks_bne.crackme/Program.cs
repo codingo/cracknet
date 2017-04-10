@@ -49,7 +49,7 @@ namespace ctf.sectalks_bne.crackme
 
                 ShowTimer();
 
-                Console.Write("Enter key: ");
+                Console.Write("Enter password: ");
                 var input = Console.ReadLine();
 
                 var password =
