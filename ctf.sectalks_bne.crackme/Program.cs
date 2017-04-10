@@ -26,7 +26,7 @@ namespace ctf.sectalks_bne.crackme
     {
         private static void Main(string[] args)
         {
-            // Use this to produce a new flag. Make sure the outputted result is added to dectryptedString
+            // Use this to produce a new flag. Make sure the outputted result is added to the flag output
             //var encryptedString = Crypto.EncryptStringAES("theforce", "73 65 63 74 61 6c 6b 73");
             //Console.WriteLine($"New flag string: {encryptedString}");
             //Console.ReadKey();
