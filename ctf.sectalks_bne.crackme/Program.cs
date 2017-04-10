@@ -48,7 +48,7 @@ namespace ctf.sectalks_bne.crackme
             {
                 if (guesses < 1) PrintGameOver();
 
-                ShowTimer();
+                PrintTimer(3);
                 PrintGuesses(guesses);
 
                 Console.Write("Enter password: ");
@@ -100,12 +100,13 @@ namespace ctf.sectalks_bne.crackme
             Environment.Exit(0);
         }
 
-        public static void ShowTimer()
+        public static void PrintTimer(int seconds)
         {
-            for (var i = 3; i >= 0; --i)
+            for (var i = seconds; i >= 0; --i)
             {
                 var originalLeft = Console.CursorLeft;
                 var originalTop = Console.CursorTop;
+
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.CursorLeft = 0;
                 Console.CursorTop = 0;
@@ -114,6 +115,7 @@ namespace ctf.sectalks_bne.crackme
 
                 Console.CursorLeft = originalLeft;
                 Console.CursorTop = originalTop;
+
                 Thread.Sleep(1000);
             }
         }
@@ -142,7 +144,6 @@ namespace ctf.sectalks_bne.crackme
             Console.CursorLeft = originalLeft;
             Console.CursorTop = originalTop;
         }
-
 
         private static void StarWars()
         {
