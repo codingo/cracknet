@@ -6,3 +6,6 @@ c:\users\michaelskelton\documents\visual studio 2015\Projects\ctf.sectalks_bne.c
 C:\Users\michaelskelton\Source\Repos\cracknet\ctf.sectalks_bne.crackme\bin\Debug\cracknet.exe.config
 C:\Users\michaelskelton\Source\Repos\cracknet\ctf.sectalks_bne.crackme\obj\Debug\cracknet.exe
 C:\Users\michaelskelton\Source\Repos\cracknet\ctf.sectalks_bne.crackme\obj\Debug\cracknet.pdb
+C:\Users\michaelskelton\Source\Repos\cracknet\ctf.sectalks_bne.crackme\bin\Debug\cracknet.exe
+C:\Users\michaelskelton\Source\Repos\cracknet\ctf.sectalks_bne.crackme\bin\Debug\cracknet.pdb
+C:\Users\michaelskelton\Source\Repos\cracknet\ctf.sectalks_bne.crackme\obj\Debug\ctf.sectalks_bne.crackme.csprojResolveAssemblyReference.cache
