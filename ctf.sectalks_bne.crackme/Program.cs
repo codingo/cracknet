@@ -64,7 +64,9 @@ namespace ctf.sectalks_bne.crackme
                 }
 
                 guesses--;
-                Console.WriteLine($"Incorrect! {guesses} guesses remain.");
+                WriteGuesses(guesses);
+
+                Console.WriteLine($"Incorrect!");
 
                 Console.Beep(350, 250);
                 Console.Beep(300, 500);
@@ -111,6 +113,26 @@ namespace ctf.sectalks_bne.crackme
                 Thread.Sleep(1000);
             }
         }
+
+        public static void WriteGuesses(int g)
+        {
+            var l = Console.CursorLeft;
+            var t = Console.CursorTop;
+            Console.CursorLeft = 28;
+            Console.CursorTop = 0;
+            if(g==1)
+            {
+                Console.Write($"One guess remains!");
+            }
+            else
+            {
+                Console.Write($"{g}/5 guesses remain!");
+            }
+            
+            Console.CursorLeft = l;
+            Console.CursorTop = t;
+        }
+
 
         private static void StarWars()
         {
