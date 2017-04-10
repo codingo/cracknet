@@ -114,19 +114,21 @@ namespace ctf.sectalks_bne.crackme
             }
         }
 
-        public static void WriteGuesses(int g)
+        public static void WriteGuesses(int remainingGuesses)
         {
             var l = Console.CursorLeft;
             var t = Console.CursorTop;
+
             Console.CursorLeft = 28;
             Console.CursorTop = 0;
-            if(g==1)
+
+            if(remainingGuesses == 1)
             {
                 Console.Write($"One guess remains!");
             }
             else
             {
-                Console.Write($"{g}/5 guesses remain!");
+                Console.Write($"{remainingGuesses}/5 guesses remain!");
             }
             
             Console.CursorLeft = l;
