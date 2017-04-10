@@ -12,3 +12,7 @@ Built with v4.5.2 of .Net (https://www.microsoft.com/en-au/download/details.aspx
 ### Spoilers
 
 The comments at the header of the Program.cs class include intended solution paths and flag. If you wish to solve without sploilers then first compile without reviewing code comments.
+
+## Solution
+
+A writeup with multiple pathways for a solution will be made available at https://www.codingo.com.au at the conclusion of the May SecTalks CTF event.
