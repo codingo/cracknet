@@ -3,7 +3,7 @@ A .net Crackme Challenge made for the SecTalks Brisbane 2017 CTF Event.
 
 ***Intended binary for challenge***: https://github.com/codingo/cracknet/blob/master/ctf.sectalks_bne.crackme/bin/Debug/cracknet.exe
 
-(note that this is a debug build and not a release build, due to compiler instructions)
+Note that this is a debug build and not a release build, due to compiler instructions. Only the executable needs to be included within the flag challenge.
 
 ## Source Code Notes
 
