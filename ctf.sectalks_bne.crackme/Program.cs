@@ -31,7 +31,7 @@ namespace ctf.sectalks_bne.crackme
             //Console.WriteLine($"New flag string: {encryptedString}");
             //Console.ReadKey();
 
-            // use to produce a new passphrase.
+            // use to produce a new passphrase. Ensure in lower case as input is lowered in routine.
             //var passphrase = Crypto.EncryptStringAES("the high ground", "73 65 63 74 61 6c 6b 73");
             //Console.WriteLine($"New passphrase: {passphrase}");
             //Console.ReadKey();
