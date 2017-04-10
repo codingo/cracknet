@@ -37,12 +37,14 @@ namespace ctf.sectalks_bne.crackme
             //Console.ReadKey();
 
             // pointless string inclusion to show up if strings is used to reverse binary
-            const string pointless = "flag{Not the real flag. Strings would be too easy";
+            const string pointless = "flag{Not a real flag. Strings would be too easy";
             Debug.WriteLine(pointless);
 
             Program.PrintBanner();
 
             var guesses = 5;
+            PrintGuesses(guesses);
+
             while (true)
             {
                 if (guesses < 1) PrintGameOver();
@@ -54,8 +56,8 @@ namespace ctf.sectalks_bne.crackme
 
                 var password =
                 Crypto.DecryptStringAES("EAAAAOkz8XiBpPhe0j3CnxGt4D5Qb0H2vh9/IeXrt1w4r313");
-
-                if (input != null && input.Equals(password))
+                
+                if (input != null && input.ToLower().Equals(password))
                 {
                     Console.WriteLine($"Success! Flag: {Crypto.DecryptStringAES("EAAAAB+ljfnegBraKanx/SJLBfrGhIDfffz8MOc922hrm0aK44KwgXmu9GHrIU+LjyBwmQ==")}!");
 
@@ -64,7 +66,7 @@ namespace ctf.sectalks_bne.crackme
                 }
 
                 guesses--;
-                WriteGuesses(guesses);
+                PrintGuesses(guesses);
 
                 Console.WriteLine($"Incorrect! Please wait to try again.");
 
@@ -114,7 +116,7 @@ namespace ctf.sectalks_bne.crackme
             }
         }
 
-        public static void WriteGuesses(int remainingGuesses)
+        public static void PrintGuesses(int remainingGuesses)
         {
             var originalLeft = Console.CursorLeft;
             var originalTop = Console.CursorTop;
