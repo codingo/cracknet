@@ -7,8 +7,9 @@ using System.Threading;
 using System.Threading.Tasks;
 
 /***
- * CrackMe Challenge made for the Brisbane SecTalks 2017 CTF Challenge
+ * CrackMe Challenge made for the Brisbane SecTalks 2017 CTF Challenge (http://www.sectalks.org/)
  * Created by Michael 'codingo' Skelton (michael@codingo.com.au)
+ * 11-April-2017
  * 
  * Please compile using the debug manifest to ensure 'string' text is included within the binary.
  * No dependancies besides .net installed need to be present. Just the cracknet.exe can be included in the
@@ -16,8 +17,9 @@ using System.Threading.Tasks;
  * 
  * Solution: The intended solution to this challenge is to either reverse engineer the binary in a decompiler
  * such as dnSpy to print out the flag (intentionally made a bit harder by the timer write location and freq) or by
- * finding both the AES key, and salt. Salt is intentionally stored within the Cypto class so the first discovery of the AES
- * decrypt string leads to a false-positive result. Class has been kept verbose for this reason.
+ * finding both the AES key, and salt. Both the salt and shared secret is intentionally stored within the Cypto class 
+ * so the first discovery of the AES decrypt string leads to a false-positive result. Class has been kept verbose 
+ * for this reason.
  * **/
 
 namespace ctf.sectalks_bne.crackme
