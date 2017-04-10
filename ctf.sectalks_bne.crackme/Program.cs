@@ -45,7 +45,7 @@ namespace ctf.sectalks_bne.crackme
             var guesses = 5;
             while (true)
             {
-                if (guesses < 1) PrintGameOver(true);
+                if (guesses < 1) PrintGameOver();
 
                 ShowTimer();
 
@@ -81,7 +81,7 @@ namespace ctf.sectalks_bne.crackme
             Console.WriteLine("     \\/           \\/     \\/     \\/    \\/     \\/      ");
         }
 
-        private static void PrintGameOver(bool exit)
+        private static void PrintGameOver()
         {
             Console.WriteLine("      _____          __  __ ______    ______      ________ _____  _ ");
             Console.WriteLine("     / ____|   /\\   |  \\/  |  ____|  / __ \\ \\    / /  ____|  __ \\| |");
@@ -92,7 +92,9 @@ namespace ctf.sectalks_bne.crackme
             Console.WriteLine(" ________________________________________________________________________ ");
             Console.WriteLine("|________________________________________________________________________|");
 
-            if (!exit) return;
+            Mario();
+
+            Environment.Exit(0);
         }
 
         public static void ShowTimer()
@@ -128,6 +130,21 @@ namespace ctf.sectalks_bne.crackme
             Console.Beep(350, 250);
             Console.Beep(300, 500);
             Thread.Sleep(50);
+        }
+
+        private static void Mario()
+        {
+            Console.Beep(659, 125);
+            Console.Beep(659, 125);
+            Thread.Sleep(125);
+            Console.Beep(659, 125);
+            Thread.Sleep(167);
+            Console.Beep(523, 125);
+            Console.Beep(659, 125);
+            Thread.Sleep(125);
+            Console.Beep(784, 125);
+            Thread.Sleep(375);
+            Console.Beep(392, 125);
         }
     }
 }
