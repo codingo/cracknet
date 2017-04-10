@@ -8,4 +8,3 @@ C:\Users\mskel\Source\Repos\cracknet\ctf.sectalks_bne.crackme\obj\Release\crackn
 C:\Users\mskel\Source\Repos\cracknet\ctf.sectalks_bne.crackme\obj\Release\cracknet.pdb
 C:\Users\mskel\Source\Repos\cracknet\ctf.sectalks_bne.crackme\bin\Release\cracknet.exe
 C:\Users\mskel\Source\Repos\cracknet\ctf.sectalks_bne.crackme\bin\Release\cracknet.pdb
-C:\Users\mskel\Source\Repos\cracknet\ctf.sectalks_bne.crackme\obj\Release\ctf.sectalks_bne.crackme.csprojResolveAssemblyReference.cache

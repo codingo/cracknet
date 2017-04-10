@@ -75,7 +75,7 @@ namespace ctf.sectalks_bne.crackme
 
         public static void PrintBanner()
         {
-            Console.WriteLine("                            __                  __   ");
+            Console.WriteLine("\n                            __                  __   ");
             Console.WriteLine("  ________________    ____ |  | __ ____   _____/  |_ ");
             Console.WriteLine("_/ ___\\_  __ \\__  \\ _/ ___\\|  |/ //    \\_/ __ \\   __\\");
             Console.WriteLine("\\  \\___|  | \\// __ \\  \\___|    <|   |  \\  ___/|  |  ");
