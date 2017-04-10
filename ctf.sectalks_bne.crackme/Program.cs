@@ -65,6 +65,9 @@ namespace ctf.sectalks_bne.crackme
 
                 guesses--;
                 Console.WriteLine($"Incorrect! {guesses} guesses remain.");
+
+                Console.Beep(350, 250);
+                Console.Beep(300, 500);
             }
         }
 
@@ -90,8 +93,6 @@ namespace ctf.sectalks_bne.crackme
             Console.WriteLine("|________________________________________________________________________|");
 
             if (!exit) return;
-            Console.ReadKey();
-            Environment.Exit(0);
         }
 
         public static void ShowTimer()
