@@ -103,21 +103,21 @@ namespace ctf.sectalks_bne.crackme
         {
             for (var i = 5; i >= 0; --i)
             {
-                var l = Console.CursorLeft;
-                var t = Console.CursorTop;
+                var originalLeft = Console.CursorLeft;
+                var originalTop = Console.CursorTop;
                 Console.CursorLeft = 0;
                 Console.CursorTop = 0;
                 Console.Write("Can make a guess in: {0}", i);
-                Console.CursorLeft = l;
-                Console.CursorTop = t;
+                Console.CursorLeft = originalLeft;
+                Console.CursorTop = originalTop;
                 Thread.Sleep(1000);
             }
         }
 
         public static void WriteGuesses(int remainingGuesses)
         {
-            var l = Console.CursorLeft;
-            var t = Console.CursorTop;
+            var originalLeft = Console.CursorLeft;
+            var originalTop = Console.CursorTop;
 
             Console.CursorLeft = 28;
             Console.CursorTop = 0;
@@ -131,8 +131,8 @@ namespace ctf.sectalks_bne.crackme
                 Console.Write($"{remainingGuesses}/5 guesses remain!");
             }
             
-            Console.CursorLeft = l;
-            Console.CursorTop = t;
+            Console.CursorLeft = originalLeft;
+            Console.CursorTop = originalTop;
         }
 
 
