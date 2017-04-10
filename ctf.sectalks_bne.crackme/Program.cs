@@ -40,9 +40,7 @@ namespace ctf.sectalks_bne.crackme
             {
                 if (guesses < 1)
                 {
-                    Console.WriteLine("Too many guesses! Goodbye.");
-                    Console.ReadKey();
-                    Environment.Exit(0);
+                    PrintGameOver(true);
                 }
 
                 Program.ShowTimer();
@@ -56,7 +54,8 @@ namespace ctf.sectalks_bne.crackme
                 if (input != null && input.Equals(decryptedString))
                 {
                     Console.WriteLine($"Success! Flag: {decryptedString}!");
-                    Console.ReadKey();
+
+                    StarWars();
                     Environment.Exit(0);
                 }
 
@@ -75,6 +74,22 @@ namespace ctf.sectalks_bne.crackme
             Console.WriteLine("     \\/           \\/     \\/     \\/    \\/     \\/      ");
         }
 
+        private static void PrintGameOver(bool exit)
+        {
+            Console.WriteLine("      _____          __  __ ______    ______      ________ _____  _ ");
+            Console.WriteLine("     / ____|   /\\   |  \\/  |  ____|  / __ \\ \\    / /  ____|  __ \\| |");
+            Console.WriteLine("    | |  __   /  \\  | \\  / | |__    | |  | \\ \\  / /| |__  | |__) | |");
+            Console.WriteLine("    | | |_ | / /\\ \\ | |\\/| |  __|   | |  | |\\ \\/ / |  __| |  _  /| |");
+            Console.WriteLine("    | |__| |/ ____ \\| |  | | |____  | |__| | \\  /  | |____| | \\ \\|_|");
+            Console.WriteLine("     \\_____/_/    \\_\\_|  |_|______|  \\____/   \\/   |______|_|  \\_(_)");
+            Console.WriteLine(" ________________________________________________________________________ ");
+            Console.WriteLine("|________________________________________________________________________|");
+
+            if (!exit) return;
+            Console.ReadKey();
+            Environment.Exit(0);
+        }
+
         public static void ShowTimer()
         {
             for (var i = 5; i >= 0; --i)
@@ -88,6 +103,26 @@ namespace ctf.sectalks_bne.crackme
                 Console.CursorTop = t;
                 Thread.Sleep(1000);
             }
+        }
+
+        private static void StarWars()
+        {
+            Console.Beep(300, 500);
+            Thread.Sleep(50);
+            Console.Beep(300, 500);
+            Thread.Sleep(50);
+            Console.Beep(300, 500);
+            Thread.Sleep(50);
+            Console.Beep(250, 500);
+            Thread.Sleep(50);
+            Console.Beep(350, 250);
+            Console.Beep(300, 500);
+            Thread.Sleep(50);
+            Console.Beep(250, 500);
+            Thread.Sleep(50);
+            Console.Beep(350, 250);
+            Console.Beep(300, 500);
+            Thread.Sleep(50);
         }
     }
 }

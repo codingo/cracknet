@@ -8,3 +8,8 @@ C:\Users\michaelskelton\Source\Repos\cracknet\ctf.sectalks_bne.crackme\obj\Debug
 C:\Users\michaelskelton\Source\Repos\cracknet\ctf.sectalks_bne.crackme\obj\Debug\cracknet.pdb
 C:\Users\michaelskelton\Source\Repos\cracknet\ctf.sectalks_bne.crackme\bin\Debug\cracknet.exe
 C:\Users\michaelskelton\Source\Repos\cracknet\ctf.sectalks_bne.crackme\bin\Debug\cracknet.pdb
+C:\Users\mskel\Source\Repos\cracknet\ctf.sectalks_bne.crackme\bin\Debug\cracknet.exe.config
+C:\Users\mskel\Source\Repos\cracknet\ctf.sectalks_bne.crackme\obj\Debug\cracknet.exe
+C:\Users\mskel\Source\Repos\cracknet\ctf.sectalks_bne.crackme\obj\Debug\cracknet.pdb
+C:\Users\mskel\Source\Repos\cracknet\ctf.sectalks_bne.crackme\bin\Debug\cracknet.exe
+C:\Users\mskel\Source\Repos\cracknet\ctf.sectalks_bne.crackme\bin\Debug\cracknet.pdb
