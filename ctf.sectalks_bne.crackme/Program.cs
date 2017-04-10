@@ -66,7 +66,7 @@ namespace ctf.sectalks_bne.crackme
                 guesses--;
                 WriteGuesses(guesses);
 
-                Console.WriteLine($"Incorrect!");
+                Console.WriteLine($"Incorrect! Please wait to try again.");
 
                 Console.Beep(350, 250);
                 Console.Beep(300, 500);
