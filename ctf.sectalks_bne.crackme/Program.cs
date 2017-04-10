@@ -29,18 +29,18 @@ namespace ctf.sectalks_bne.crackme
             // Use this to produce a new flag. Make sure the outputted result is added to dectryptedString
             //var encryptedString = Crypto.EncryptStringAES("flag{bef46838-057b-4a1}", "73 65 63 74 61 6c 6b 73");
 
-            const string pointless = "Strings would be too easy";
+            // pointless string inclusion to show up if strings is used to reverse binary
+            const string pointless = "flag{Not the real flag. Strings would be too easy";
             Debug.WriteLine(pointless);
-
-            var guesses = 5;
 
             Program.PrintBanner();
 
+            var guesses = 5;
             while (true)
             {
                 if (guesses < 1)
                 {
-                    Console.WriteLine("Too many guesses!");
+                    Console.WriteLine("Too many guesses! Goodbye.");
                     Console.ReadKey();
                     Environment.Exit(0);
                 }
