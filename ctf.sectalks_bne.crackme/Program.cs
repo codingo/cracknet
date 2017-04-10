@@ -27,8 +27,13 @@ namespace ctf.sectalks_bne.crackme
         private static void Main(string[] args)
         {
             // Use this to produce a new flag. Make sure the outputted result is added to dectryptedString
-            //var encryptedString = Crypto.EncryptStringAES("flag{7h3_f0rc3_15_w17h-y0u}", "73 65 63 74 61 6c 6b 73");
+            //var encryptedString = Crypto.EncryptStringAES("theforce", "73 65 63 74 61 6c 6b 73");
             //Console.WriteLine($"New flag string: {encryptedString}");
+            //Console.ReadKey();
+
+            // use to produce a new passphrase.
+            //var passphrase = Crypto.EncryptStringAES("the high ground", "73 65 63 74 61 6c 6b 73");
+            //Console.WriteLine($"New passphrase: {passphrase}");
             //Console.ReadKey();
 
             // pointless string inclusion to show up if strings is used to reverse binary
@@ -40,22 +45,19 @@ namespace ctf.sectalks_bne.crackme
             var guesses = 5;
             while (true)
             {
-                if (guesses < 1)
-                {
-                    PrintGameOver(true);
-                }
+                if (guesses < 1) PrintGameOver(true);
 
                 ShowTimer();
 
                 Console.Write("Enter key: ");
                 var input = Console.ReadLine();
 
-                var decryptedString =
-                Crypto.DecryptStringAES("EAAAAB+ljfnegBraKanx/SJLBfrGhIDfffz8MOc922hrm0aK44KwgXmu9GHrIU+LjyBwmQ==");
+                var password =
+                Crypto.DecryptStringAES("EAAAAOkz8XiBpPhe0j3CnxGt4D5Qb0H2vh9/IeXrt1w4r313");
 
-                if (input != null && input.Equals(decryptedString))
+                if (input != null && input.Equals(password))
                 {
-                    Console.WriteLine($"Success! Flag: {decryptedString}!");
+                    Console.WriteLine($"Success! Flag: {Crypto.DecryptStringAES("EAAAAB+ljfnegBraKanx/SJLBfrGhIDfffz8MOc922hrm0aK44KwgXmu9GHrIU+LjyBwmQ==")}!");
 
                     StarWars();
                     Environment.Exit(0);
