@@ -1,0 +1,5 @@
+c:\users\michaelskelton\documents\visual studio 2015\Projects\ctf.sectalks_bne.crackme\ctf.sectalks_bne.crackme\bin\Release\cracknet.exe.config
+c:\users\michaelskelton\documents\visual studio 2015\Projects\ctf.sectalks_bne.crackme\ctf.sectalks_bne.crackme\bin\Release\cracknet.exe
+c:\users\michaelskelton\documents\visual studio 2015\Projects\ctf.sectalks_bne.crackme\ctf.sectalks_bne.crackme\bin\Release\cracknet.pdb
+c:\users\michaelskelton\documents\visual studio 2015\Projects\ctf.sectalks_bne.crackme\ctf.sectalks_bne.crackme\obj\Release\cracknet.exe
+c:\users\michaelskelton\documents\visual studio 2015\Projects\ctf.sectalks_bne.crackme\ctf.sectalks_bne.crackme\obj\Release\cracknet.pdb
