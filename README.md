@@ -9,6 +9,3 @@ Note that this is a debug build and not a release build, due to compiler instruc
 
 Built with v4.5.2 of .Net (https://www.microsoft.com/en-au/download/details.aspx?id=42642)
 
-### Spoilers
-
-The comments at the header of the Program.cs class include intended solution paths and  the current flag. If you wish to solve without sploilers then first compile without reviewing code comments.
