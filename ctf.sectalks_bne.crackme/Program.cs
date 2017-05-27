@@ -19,7 +19,8 @@ using System.Threading.Tasks;
  * such as dnSpy to print out the flag (intentionally made a bit harder by the timer write location and freq) or by
  * finding both the AES key, and salt. Both the salt and shared secret is intentionally stored within the Cypto class 
  * so the first discovery of the AES decrypt string leads to a false-positive result. Class has been kept verbose 
- * for this reason.
+ * for this reason. Alternatively you can also reverse this in IDA and patch out the conditional jump 
+ * instead of decompiling and re-compiling the application.
  * **/
 
 namespace ctf.sectalks_bne.crackme
