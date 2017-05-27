@@ -14,13 +14,6 @@ using System.Threading.Tasks;
  * Please compile using the debug manifest to ensure 'string' text is included within the binary.
  * No dependancies besides .net installed need to be present. Just the cracknet.exe can be included in the
  * ctf release. Name is intended to be a hint.
- * 
- * Solution: The intended solution to this challenge is to either reverse engineer the binary in a decompiler
- * such as dnSpy to print out the flag (intentionally made a bit harder by the timer write location and freq) or by
- * finding both the AES key, and salt. Both the salt and shared secret is intentionally stored within the Cypto class 
- * so the first discovery of the AES decrypt string leads to a false-positive result. Class has been kept verbose 
- * for this reason. Alternatively you can also reverse this in IDA and patch out the conditional jump 
- * instead of decompiling and re-compiling the application.
  * **/
 
 namespace ctf.sectalks_bne.crackme
@@ -39,7 +32,7 @@ namespace ctf.sectalks_bne.crackme
             //Console.WriteLine($"New passphrase: {passphrase}");
             //Console.ReadKey();
 
-            // pointless string inclusion to show up if strings is used to reverse binary
+            // pointless string inclusion to show up if strings is used to reverse binary or when loaded in immunity
             const string pointless = "flag{Not a real flag. Strings would be too easy";
             Debug.WriteLine(pointless);
 
