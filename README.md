@@ -9,3 +9,6 @@ Note that this is a debug build and not a release build, due to compiler instruc
 
 Built with v4.5.2 of .Net (https://www.microsoft.com/en-au/download/details.aspx?id=42642)
 
+## Writeup
+
+A writeup explaining one solution path for this binary can be found here: https://codingo.github.io/reverse-engineering/ctf/2017/07/25/Decompiling-CSharp-By-Example-with-Cracknet.html
