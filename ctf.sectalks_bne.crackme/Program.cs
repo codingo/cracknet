@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 /***
  * CrackMe Challenge made for the Brisbane SecTalks 2017 CTF Challenge (http://www.sectalks.org/)
- * Created by Michael 'codingo' Skelton (michael@codingo.com.au)
+ * Created by @codingo_
  * 11-April-2017
  * 
  * Please compile using the debug manifest to ensure 'string' text is included within the binary.
